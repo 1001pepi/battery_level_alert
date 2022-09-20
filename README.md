@@ -3,9 +3,20 @@ Vocal alert when the level of the computer's battery reaches a critical value us
 
 # How to install and run the project
 1. Clone the git repository
-2. Make sure you have the **mpg123** and **screen** packages installed. If not, you can do it by running the command: ***sudo apt-get install mpg123***. The mpg123 package will be used to read audio files when sending the alert, and the screen package to run the script in the background.
+2. Make sure you have the **mpg123** and **screen** packages installed. If not, you can do it by running the command:
+```
+sudo apt-get install mpg123
+```
+The mpg123 package will be used to read audio files when sending the alert, and the screen package to run the script in the background.
 3. Copy the **battery_level_alert_script.sh** file inside your **/home/$user/** directory.
-4. Open the **/home/$user/.profile** file by running the command: **nano /home/$user/.profild** in the terminal. And add this code at the end of the file: ***screen -d -m bash /home/$user/battery_alert_script.sh***.
+4. Open the **/home/$user/.profile** file by running the command:
+```
+nano /home/$user/.profild
+```
+in the terminal. And add this code at the end of the file:
+```
+screen -d -m bash /home/$user/battery_alert_script.sh
+```
 
 > The two previous help to automatically launch the battery_level_aler.py script each time you will log in instead of doing it manually.
 
